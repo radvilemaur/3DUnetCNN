@@ -1,5 +1,7 @@
 import os
 import glob
+import sys 
+sys.path.append('/rds/general/user/rm5417/home/KERAS/3DUnetCNN') # added these two lines because of the error "Module unet3d not found" 
 
 from unet3d.data import write_data_to_file, open_data_file
 from unet3d.generator import get_training_and_validation_generators
